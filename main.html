@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>orientation test</title>
+    <script language="javascript" type="text/javascript" src="jquery-1.6.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="orient.js"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="outercontainer">
+        <div id="leftcontainer">
+            <div id="lefttitle">
+                Menu
+            </div>
+            <div id="leftcontent">
+                <ul id="leftmenu">
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li>Item Four</li>
+                    <li>Item Five</li>
+                    <li>Item Six</li>
+                </ul>
+            </div>
+        </div>
+        <div id="rightcontainer">
+            <div id="righttitle">
+                Content
+            </div>
+            <div id="rightcontent">
+                <ul id="rightitems">
+                    <li><a onclick="doOrientation('portrait');">Portrait</a></li>
+                    <li><a onclick="doOrientation('portraitUpsideDown');">Portrait upsidedown</a></li>
+                    <li><a onclick="doOrientation('landscapeLeft');">Landscape left</a></li>
+                    <li><a onclick="doOrientation('landscapeRight');">Landscape right</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="oriented">
+    	<!-- this would normally be hidden - uncomment the #oriented class in the generic.css file to hide this -->
+    </div>
+</body>
+</html>

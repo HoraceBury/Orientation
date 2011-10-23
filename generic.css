@@ -1,0 +1,130 @@
+﻿/* orientation */
+
+#orientationframe
+{
+    width: 100px;
+    height: 100px;
+}
+
+.portrait
+{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+
+.portraitUpsideDown
+{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+.landscapeLeft
+{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.landscapeRight
+{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+/* UNCOMMENT THIS TO HIDE THE ORIENTATION DIV */
+/*
+#orient
+{
+	visibility: none;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: -500px;
+	top: -500px;
+}
+*/
+
+
+/* document */
+
+body
+{
+    width: 1024px;
+    height: 768px;
+    
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+}
+
+div
+{
+}
+
+#leftcontainer
+{
+    float: left;
+}
+
+.leftcontainer-visible
+{
+    visibility: visible;
+    width: 259px;
+}
+.leftcontainer-collapse
+{
+    visibility: collapse;
+    width: 0px;
+}
+
+
+/* menu */
+
+#leftcontainer #lefttitle
+{
+    background-color: #aaf;
+}
+
+#leftcontainer #leftcontent
+{
+    background-color: #ccf;
+}
+
+#leftcontainer ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    border-style: none;
+    border-color: #000;
+}
+
+#outercontainer #leftmenu
+{
+    list-style-type: none;
+}
+
+
+/* content */
+
+#rightcontainer #righttitle
+{
+    background-color: #afa;
+}
+
+#rightcontainer #rightcontent
+{
+    background-color: #cfc;
+}
+
+#rightcontainer ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    border-style: none;
+    border-color: #000;
+}
+
+#outercontainer #rightitems
+{
+    list-style-type: none;
+}
